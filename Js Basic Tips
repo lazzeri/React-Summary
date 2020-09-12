@@ -1,0 +1,50 @@
+Debugging:
+
+console.table(array)
+console.log({obj,obj,obj})
+
+Stack Trace Logs:
+Will console log every time we call it and show position
+
+const deleteMe = () =› console.trace('bye database')
+
+
+
+Desctructing:
+
+function feed({name,meal,diet}){
+//take attributes out of object so we dont have to call e.g. animal.name etc
+}
+
+
+Creating new object out of old:
+
+//creating object lvl10 out of pikachu and stats
+const lvl10 = { ...pikachu, ...stats }
+
+
+//puhsing new items:
+
+//push
+pokemon = [...pokemon, 'Bulbasaur']
+
+//shift
+
+pokemon = ['Bulbasaur', ...pokemon]
+
+LOOPING:
+
+//Reduce
+const total = orders.reduce((acc,cur) =› acc + cur)
+//Map
+const withTax = orders.map(v => v * 1.1)
+//Filter
+const highValue = orders.filter(v =› v > 100);
+
+
+Async await:
+
+const sumRandomAsync = async() =› {
+const first = await random();
+const second = await bla();
+}
