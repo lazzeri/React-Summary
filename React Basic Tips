@@ -1,3 +1,6 @@
 Create new application:
 npm i -g create-react-app@1.5.2
 
+Properties:
+Are for constants that we set as input and use in components
+
