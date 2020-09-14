@@ -1,0 +1,17 @@
+//Starts the development server
+npm start
+
+//Bundles the app into static files for production
+npm run build
+
+//Starts test runner
+npm test
+
+//Removes this tool and copies build dependencies, conf files and scripts into the app directory.
+npm run eject
+
+//When building a new React-app:
+Copy template:
+https://codeload.github.com/coreui/coreui-free-react-admin-template/zip/master
+Run npm sass: npm install node-sass
+Node-sass is a library that provides binding for Node.js to LibSass, the C version of the popular stylesheet preprocessor, Sass.
