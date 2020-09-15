@@ -1,6 +1,32 @@
+Starting Server with this Boilerplate:
+2. Install http-server from the npm command on the command prompt : "npm install -g http-server"
+3. Now go to the directory with your static files and run command : "http-server"
+
 Create new application:
 npm i -g create-react-app@1.5.2
 
+
+Tips and Tricks:
+
+1.) To get info of child like this: <div> test <div>, to get 'test'
+this.props.children
+
+
+Components:
+Have to start with uppercase
+
 Properties:
 Are for constants that we set as input and use in components
+
+EventHandler:
+Can have functions set like render:
+
+edit: function(){
+               alert('test');
+           },
+
+Get instatiatiated like with an event on element:
+<button onClick={this.edit}>
+
+State:
 
