@@ -11,6 +11,9 @@ Tips and Tricks:
 1.) To get info of child like this: <div> test <div>, to get 'test'
 this.props.children
 
+2.) Get access to variable: {var}, var is set after function () {
+3.) Checkbox defaultValue = defaultChecked="" and for textarea the defaultValue is.... defaultValue
+
 
 Components:
 Have to start with uppercase
@@ -29,4 +32,40 @@ Get instatiatiated like with an event on element:
 <button onClick={this.edit}>
 
 State:
+We use states for variables that change throughout the lifecycle of our application.
+1.) to declare states we use the function at the start of our component:
+         getInitialState: function () {
+                     return {
+                         checked: false
+                     }
+                 },
+2.) To set a state we use: this.setState({checked: false})
+3.) To get a state we do: this.state.checked
+
+If we want to set a State to a component we use this logic:
+
+We create a function that renders the part we want to render:
+    renderState1: function(){
+    <div>bich</div>
+    }
+and then use the state in render to check in what stat we are to test what we want to render:
+    render: function(){
+        if(this.state.state1){
+            return this.renderState1();
+        }
+    }
+
+Refs:  How do we get values of a Component? Through refs!
+          <textarea ref="newText" defaultValue={this.props.children}></textarea>
+Like this our whole tag with all in it can be used and is stored as this.refs.newText.
+To get the innerText we do:
+            this.refs.newText.value
+
+
+
+
+
+
+
+
 
