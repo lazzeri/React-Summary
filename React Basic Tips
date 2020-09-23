@@ -61,6 +61,22 @@ Like this our whole tag with all in it can be used and is stored as this.refs.ne
 To get the innerText we do:
             this.refs.newText.value
 
+Component thats nows about other component:
+Generaly components know about eachother, to make that poosible we have multiple steps:
+Just create a component with states, and map state over creationg of components like this:
+
+return (
+                <div className="board">
+                    {
+                        this.state.comments.map(function (text, i) {
+                            return (<Comment key={i}> {text}</Comment>)
+                        })
+                    }
+                </div>
+            )
+
+
+And for the key to identifie it we use the maping tool or a function, whatev
 
 
 
