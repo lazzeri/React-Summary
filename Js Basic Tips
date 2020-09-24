@@ -48,3 +48,6 @@ const sumRandomAsync = async() =› {
 const first = await random();
 const second = await bla();
 }
+
+Deleting part of an array:
+arr.splice(i,1);

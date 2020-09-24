@@ -78,7 +78,12 @@ return (
 
 And for the key to identifie it we use the maping tool or a function, whatev
 
+Moidfying sets:
 
+Pretty easy, just make a copy of the sets, modify them and then set them as the new set.
+  let arr = this.state.comments;
+    arr[i] = newText;
+this.setState({comments: arr});
 
 
 
